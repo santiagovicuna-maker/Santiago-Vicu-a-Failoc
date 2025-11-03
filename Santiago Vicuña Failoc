@@ -1,24 +1,28 @@
-<!--
-Plantilla HTML simple para tu página personal.
-Instrucciones: abre este archivo en el lienzo y edita los lugares que dicen "TU_NOMBRE", "TU_DESCRIPCION" y las filas de la tabla de cursos.
-Puedes copiar y pegar la sección de la fila de cursos para agregar más cursos.
---><!doctype html>
-
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi página personal</title>
+  <title>Página personal de Nayely MN</title>
   <style>
     :root{ --azul:#0e66d1; --card:#ffffff; --texto:#0b1a2b }
-    html,body{ height:100%; margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--azul); color:var(--texto); }
+    html,body{
+      height:100%; margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--azul); color:var(--texto);
+    }
     .wrap{ max-width:900px; margin:40px auto; padding:24px; }
-    .card{ background:var(--card); border-radius:12px; padding:28px; box-shadow:0 8px 24px rgba(2,6,23,0.12); }
+    .card{ background:var(--card); border-radius:14px; padding:32px; box-shadow:0 8px 24px rgba(2,6,23,0.12); }
     header{ display:flex; gap:20px; align-items:center; }
-    .avatar{ width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg, rgba(14,102,209,0.12), rgba(14,102,209,0.06)); display:flex; align-items:center; justify-content:center; font-size:28px; color:var(--azul); }
-    h1{ margin:0; font-size:28px; }
-    p.lead{ margin:6px 0 0 0; color:#253544; }
-    section{ margin-top:22px; }
+    .avatar{
+      width:96px; height:96px; border-radius:12px;
+      background:linear-gradient(135deg, rgba(14,102,209,0.12), rgba(14,102,209,0.06));
+      display:flex; align-items:center; justify-content:center;
+      font-size:28px; color:var(--azul); font-weight:600;
+    }
+    h1{ margin:0; font-size:30px; }
+    p.lead{ margin:8px 0 0 0; color:#253544; font-size:17px; }
+    section{ margin-top:28px; }
     table{ width:100%; border-collapse:collapse; margin-top:8px; }
     th,td{ text-align:left; padding:10px 8px; border-bottom:1px solid #eef3fb; }
     th{ color:#284055; font-weight:600; }
@@ -26,8 +30,7 @@ Puedes copiar y pegar la sección de la fila de cursos para agregar más cursos.
     .muted{ color:#6b7b8c; font-size:14px }
     .note{ font-size:13px; color:#6b7b8c; margin-top:14px }
     .placeholder{ background:#f6fbff; padding:6px 8px; border-radius:6px; display:inline-block }
-    /* Make editable fields obvious */
-    [contenteditable]{ outline:2px dashed rgba(14,102,209,0.08); padding:2px 4px; border-radius:4px }
+    [contenteditable]{ outline:2px dashed rgba(14,102,209,0.15); padding:2px 4px; border-radius:4px }
     @media (max-width:640px){ .wrap{ margin:16px } header{ flex-direction:column; align-items:flex-start } }
   </style>
 </head>
@@ -35,50 +38,51 @@ Puedes copiar y pegar la sección de la fila de cursos para agregar más cursos.
   <div class="wrap">
     <div class="card">
       <header>
-        <div class="avatar" aria-hidden="true">MI</div>
+        <div class="avatar">NM</div>
         <div>
-          <h1 contenteditable="true">TU_NOMBRE</h1>
-          <p class="lead" contenteditable="true">TU_DESCRIPCION — escribe aquí una frase corta sobre ti: a qué te dedicas, intereses o objetivo profesional.</p>
-          <p class="muted">Contacto: <span contenteditable="true" class="placeholder">tu.email@example.com</span> · Ciudad, País</p>
+          <h1>Nayely MN</h1>
+          <p class="lead" contenteditable="true">
+            Escribe aquí una breve presentación sobre ti: tus intereses, tu carrera o área de especialización,
+            y lo que te motiva profesionalmente.
+          </p>
+          <p class="muted">Contacto: <span contenteditable="true" class="placeholder">tu.email@example.com</span> · Perú</p>
         </div>
-      </header><section>
-    <h2 style="margin:0 0 6px 0">Cursos</h2>
-    <p class="note">Agrega los cursos que has llevado. Para cada curso indica profesor(a) y pega el link a su LinkedIn.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Curso</th>
-          <th>Profesor(a)</th>
-          <th>LinkedIn</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Copia esta fila para añadir más cursos -->
-        <tr>
-          <td contenteditable="true">Nombre del curso 1</td>
-          <td contenteditable="true">Nombre del profesor</td>
-          <td><a href="https://www.linkedin.com/in/ejemplo" target="_blank" class="link">https://www.linkedin.com/in/ejemplo</a></td>
-        </tr>
-        <!-- fila de ejemplo -->
-        <tr>
-          <td contenteditable="true">Nombre del curso 2</td>
-          <td contenteditable="true">Nombre del profesor 2</td>
-          <td><a href="https://www.linkedin.com/in/ejemplo2" target="_blank" class="link">https://www.linkedin.com/in/ejemplo2</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+      </header>
 
-  <section>
-    <h2 style="margin:18px 0 6px 0">Acerca de</h2>
-    <p contenteditable="true">Aquí puedes añadir una descripción más larga sobre tu formación, logros o proyectos relevantes. Ejemplo: Estudiante de X en la Universidad Y, con interés en Z. Puedes mencionar idiomas, herramientas o certificaciones.</p>
-  </section>
+      <section>
+        <h2>Cursos</h2>
+        <p class="note">Agrega tus cursos, profesores y los enlaces a sus perfiles de LinkedIn.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Profesor(a)</th>
+              <th>LinkedIn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo de fila — copia y pega para agregar más -->
+            <tr>
+              <td contenteditable="true">Nombre del curso</td>
+              <td contenteditable="true">Nombre del profesor(a)</td>
+              <td><a href="https://www.linkedin.com/in/ejemplo" target="_blank" class="link">https://www.linkedin.com/in/ejemplo</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-  <footer style="margin-top:18px; display:flex; justify-content:space-between; align-items:center;">
-    <small class="muted">Plantilla creada para que rellenes tus datos rápidamente.</small>
-    <small class="muted">&copy; <span contenteditable="true">2025 TU_NOMBRE</span></small>
-  </footer>
-</div>
+      <section>
+        <h2>Acerca de mí</h2>
+        <p contenteditable="true">
+          Escribe aquí una descripción más larga sobre ti: tu formación, tus metas profesionales, tus habilidades o proyectos que quieras destacar.
+        </p>
+      </section>
 
-  </div>  <!-- Si prefieres, puedes guardar esta página como archivo .html: guarda el contenido del lienzo en un archivo llamado pagina_personal.html --></body>
+      <footer style="margin-top:24px; display:flex; justify-content:space-between; align-items:center;">
+        <small class="muted">Plantilla personalizada por Nayely MN</small>
+        <small class="muted">&copy; 2025 Nayely MN</small>
+      </footer>
+    </div>
+  </div>
+</body>
 </html>
